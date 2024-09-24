@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="Active.css">
+    <link rel="stylesheet" href="responsive1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'hi-primary': '#a3e635',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Additional styles for responsiveness */
+        .card {
+            flex-direction: column;
+        }
+        @media (min-width: 640px) {
+            .card {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans w-full">
+
+  <!-- Navbar Section -->
+  <div class="navbar1 bg-base-300">
+    <div class="container">
+      <div class="navbar flex flex-row mx-8 my-8 ">
+        <div class="navbar-start w-1/3">
+          <button class="btn btn-success font-bold text-center rounded-2xl space-y-0 bg-[#84cc16]"> Blog </button>
+        </div>
+        <div class="navbar-center w-1/3">
+          <button class="btn btn-success font-bold text-center rounded-2xl space-y-0 bg-base-300 border-base-300 shadow-none hover:bg-base-300">
+            <img class="mx-8" src="logo.png">Donate Bangladesh
+          </button>
+        </div>
+        <div class="navbar-end w-1/3"> 
+          <button class="btn btn-success  
+          font-bold text-center 
+          space-y-0  bg-base-300 border-base-300 shadow-none"  id="fixedBtn"><img src="coin.png"> <span id="button3Value">52000000</span> BDT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Manubar Section -->
+  <div class="manubar1 mx-8 my-8">
+    <div class="container">
+      <div class="manubar mx-8 my-8 flex flex-row ...">
+        <div class="navbar-start"></div>
+        <div class="navbar-center flex flex-row ... gap-4">
+          <div><button class="btn btn-success  
+            font-bold text-center rounded-2xl 
+            space-y-0 bg-[#84cc16]">Donation
+          </button></div>
+          <div>  
+            <a class="btn btn-success  
+              font-bold text-center 
+              space-y-0  bg-base-300 border-base-300" href="page2.html">History</a>
+          </div>
+        </div>
+        <div class="navbar-end"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Section -->
+  <div class="three_card">
+    <div class="container">
+      <div class="card_design gap-4 flex flex-col w-full">
+        
+        <!-- Noakhali Card -->
+        <div class="card card-side bg-base-100 shadow-xl mx-8 my-8">
+          <div class="mx-8 my-8 w-full md:w-1/2">   
+            <figure><img src="noakhali.png"></figure>
+          </div>
+          <div class="card-body mx-8 my-8 w-full md:w-1/2">
+            <button class="btn btn-success font-bold text-center rounded-2xl space-y-0 bg-base-300" id="button2"> <img src="coin.png"> <span id="button2Value">0</span> BDT</button>
+            <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+            <p>The flood situation in Noakhali has worsened due to continuous rain and upstream water, leading many people to seek shelters. However, space is unavailable in remote areas, forcing many to live in waterlogged conditions.</p>
+            <input type="number" id="inputAmount" placeholder="Write donation amount">
+            <br>
+            <button class="btn bg-[#84cc16]" id="submitButton">Submit</button>
+          </div>
+        </div>
+        
+        <!-- Feni Card -->
+        <div class="card card-side bg-base-100 shadow-xl mx-8 my-8">
+          <div class="mx-8 my-8 w-full md:w-1/2">
+            <figure><img src="feni.png"></figure>
+          </div>
+          <div class="card-body mx-8 my-8 w-full md:w-1/2">
+            <button class="btn btn-success font-bold text-center rounded-2xl space-y-0 bg-base-300" id="button21"> <img src="coin.png"> <span id="button21Value">0</span> BDT</button>
+            <h2 class="card-title">Donate for Flood Relief in Feni, Bangladesh</h2>
+            <p>The flood situation in Feni district has further worsened as several villages have been flooded due to persistent rainfall, leaving over 3 lakh people marooned.</p>
+            <input type="number" id="inputAmount2" placeholder="Write donation amount">
+            <br>
+            <button class="btn bg-[#84cc16]" id="submitButton2">Submit</button>
+          </div>
+        </div>
+        
+        <!-- Quota Protest Card -->
+        <div class="card card-side bg-base-100 shadow-xl mx-8 my-8">
+          <div class="mx-8 my-8 w-full md:w-1/2">
+            <figure><img src="quota-protest.png"></figure>
+          </div>
+          <div class="card-body mx-8 my-8 w-full md:w-1/2">
+            <button class="btn btn-success font-bold text-center rounded-2xl space-y-0 bg-base-300" id="button23"> <img src="coin.png"> <span id="button23Value">0</span> BDT</button>
+            <h2 class="card-title"> Aid for Injured in the Quota Movement</h2>
+            <p>Our right to protest is under attack, threatened by those in power who fear the change people can bring.</p>
+            <input type="number" id="inputAmount3" placeholder="Write donation amount">
+            <br>
+            <button class="btn bg-[#84cc16]" id="submitButton3">Submit</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript to handle the donation and deduction logic -->
+  <script>
+    let button2Value = 0;
+    let button21Value = 0;
+    let button23Value = 0;
+    let button3Value = 52000000;
+
+    // Function to handle donation logic
+    function handleDonation(buttonValue, buttonValueSpan, inputAmount, button3ValueSpan) {
+        let amount = parseFloat(inputAmount.value) || 0; // Get the input value
+
+        if (amount > 0) {
+            buttonValue += amount;
+            buttonValueSpan.textContent = buttonValue; // Update the respective button display
+            
+            button3Value -= amount; 
+            button3ValueSpan.textContent = button3Value >= 0 ? button3Value : 0; // Prevent negative values
+
+            alert("Successful: Amount added and deducted.");
+        } else {
+            alert("It's not possible to deduct a negative amount.");
+        }
+
+        inputAmount.value = ''; // Reset the input field
+    }
+
+    // Event listener for the first card (Noakhali)
+    document.getElementById('submitButton').addEventListener('click', () => {
+        handleDonation(button2Value, document.getElementById('button2Value'), document.getElementById('inputAmount'), document.getElementById('button3Value'));
+    });
+
+    // Event listener for the second card (Feni)
+    document.getElementById('submitButton2').addEventListener('click', () => {
+        handleDonation(button21Value, document.getElementById('button21Value'), document.getElementById('inputAmount2'), document.getElementById('button3Value'));
+    });
+
+    // Event listener for the third card (Quota Protest)
+    document.getElementById('submitButton3').addEventListener('click', () => {
+        handleDonation(button23Value, document.getElementById('button23Value'), document.getElementById('inputAmount3'), document.getElementById('button3Value'));
+    });
+  </script>
+
+</body>
+</html>
